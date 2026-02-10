@@ -4,7 +4,7 @@ services:
     build: ./
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ../container-mount:/home/student/mount-point
+      - ../container-mount:/home/student/ros2_ws
     environment:
       - DISPLAY=${DISPLAY}
     # network_mode: host
