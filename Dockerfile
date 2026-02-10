@@ -27,7 +27,6 @@ WORKDIR ${HOME_DIR}
 
 RUN touch ${HOME_DIR}/.hushlogin && \
     mkdir ${HOME_DIR}/.diamond && \
-    mkdir -p ${HOME_DIR}/ros2_ws/src/ && \
     mkdir ${HOME_DIR}/.ssh
 
 # Only add starship init if starship was successfully installed

@@ -4,10 +4,7 @@ services:
     build: ./
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - type: bind
-        source: ${ROS_PROJECT_PATH}
-        target: /home/student/ros2_ws/src
-      - ros2_workspace:/home/student/ros2_ws
+      - ../container-mount:/home/student/mount-point
     environment:
       - DISPLAY=${DISPLAY}
     # network_mode: host

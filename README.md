@@ -1,7 +1,16 @@
-# A Docker Container for ROS 2 Jazzy
-
-**Modified version to allow easily mounting a custom home directory**
+**Modified version to mount `../container-mount` of this directory as `~/mount-point`**
 **Only configured to work on linux**
+Currently, when switching between working in the container and on the host system,
+you will have to manually change the ownership of the file. by:
+```bash
+# In the container
+sudo chown -R student ~/mount-point
+
+# Host system
+sudo chown -R [username_here] container-mount
+```
+
+# A Docker Container for ROS 2 Jazzy
 
 ## Installation and Setup
 
